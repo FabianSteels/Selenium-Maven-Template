@@ -20,7 +20,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <groupId>com.lazerycode.selenium</groupId>
-    <artifactId>maven-template</artifactId>
+    <artifactId>Selenium-template</artifactId>
     <version>1.0-SNAPSHOT</version>
     <modelVersion>4.0.0</modelVersion>
 
@@ -55,7 +55,7 @@
         <read.timeout>30000</read.timeout>
         <connection.timeout>40000</connection.timeout>
         <retry.attempts>4</retry.attempts>
-        <browser>firefox</browser>
+        <browser>chrome</browser>
         <threads>1</threads>
         <remote>false</remote>
         <headless>true</headless>
@@ -67,6 +67,8 @@
         <proxyPort/>
         <proxyUsername/>
         <proxyPassword/>
+        <webdriver.gecko.driver>${project.basedir}/src/test/resources/selenium_standalone_binaries/osx/marionette/64bit/geckodriver</webdriver.gecko.driver>
+        <webdriver.chrome.driver>${project.basedir}/src/test/resources/selenium_standalone_binaries/osx/googlechrome/64bit/chromedriver</webdriver.chrome.driver>
     </properties>
 
     <dependencies>
@@ -74,31 +76,31 @@
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-remote-driver</artifactId>
             <version>${selenium.version}</version>
-            <scope>test</scope>
+            <!--<scope>test</scope>-->
         </dependency>
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
             <version>${selenium.version}</version>
-            <scope>test</scope>
+            <!--<scope>test</scope>-->
         </dependency>
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
             <version>${testng.version}</version>
-            <scope>test</scope>
+            <!--<scope>test</scope>-->
         </dependency>
         <dependency>
             <groupId>org.assertj</groupId>
             <artifactId>assertj-core</artifactId>
             <version>${assertj-core.version}</version>
-            <scope>test</scope>
+            <!--<scope>test</scope>-->
         </dependency>
         <dependency>
             <groupId>com.lazerycode.selenium</groupId>
             <artifactId>query</artifactId>
             <version>${query.version}</version>
-            <scope>test</scope>
+            <!--<scope>test</scope>-->
         </dependency>
     </dependencies>
 
