@@ -181,7 +181,7 @@
                                 <goals>
                                     <goal>integration-test</goal>
                                     <!--This goal makes the build fail if you have test failures-->
-                                    <goal>verify</goal>
+                                    <!--<goal>verify</goal>-->
                                 </goals>
                             </execution>
                         </executions>
